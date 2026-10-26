@@ -448,6 +448,25 @@
   .course-foot a{ color: var(--brand); font-weight: 600; text-decoration: none; }
   .course-foot a:hover{ text-decoration: underline; }
 
+  /* ---------- Sertifikat ---------- */
+  .cert{
+    margin-top: 1.35rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 2rem;
+  }
+  .cert-scores{ display: flex; flex-wrap: wrap; gap: 1.5rem; }
+  .cert-k{ display: block; font-size: .76rem; color: var(--muted); margin-bottom: .1rem; }
+  .cert-v{ display: block; font-weight: 700; font-size: 1.05rem; font-family: var(--display); }
+  .cert-id{ font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .cert-link{
+    margin-left: auto;
+    font-size: .84rem; font-weight: 600; color: var(--brand); text-decoration: none;
+    border: 1.5px solid var(--brand); border-radius: 999px; padding: .45rem 1rem;
+    transition: background-color .16s ease, color .16s ease;
+  }
+  .cert-link:hover{ background: var(--brand); color: #FFFFFF; }
+
   /* ---------- Keahlian ---------- */
   .skill-group{
     display: grid; grid-template-columns: 10rem 1fr; gap: 1.75rem;
@@ -527,6 +546,7 @@
     <div class="topbar-name">Daniel M. T. Pandiangan <em>S.H.</em></div>
     <nav class="nav" aria-label="Bagian halaman">
       <a href="#profil">Profil</a>
+      <a href="#karya">Karya</a>
       <a href="#pengalaman">Pengalaman</a>
       <a href="#pendidikan">Pendidikan</a>
       <a href="#pelatihan">Pelatihan</a>
@@ -565,7 +585,8 @@
       </div>
 
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="mailto:danielmtp21@gmail.com">Kirim email</a>
+        <a class="btn btn-primary" href="#karya">Lihat contoh karya</a>
+        <a class="btn" href="mailto:danielmtp21@gmail.com">Kirim email</a>
         <a class="btn" href="https://wa.me/6281315923188" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn" href="https://linkedin.com/in/danielpandiangan" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -585,7 +606,7 @@
       </div>
       <div class="prose">
         <p>Saya lulusan Ilmu Hukum Universitas Pembangunan Nasional “Veteran” Jawa Timur dengan IPK 3,56. Selama magang di Satuan Tugas Khusus P3TPU Kejaksaan Agung RI, saya bekerja langsung dengan berkas perkara: memverifikasi kelengkapan dan kesesuaiannya, menyusun dokumen seperti P-18, P-19, P-21, dan P-24, serta melakukan penelitian dan analisis hukum awal atas unsur tindak pidana.</p>
-        <p>Setelah itu saya melanjutkan ke ranah korporasi melalui bootcamp Corporate Legal dan OSS-RBA di Ioda Academy — drafting dan review perjanjian, analisis risiko kontraktual, legal opinion, laporan kepatuhan, hingga perizinan berusaha berbasis risiko.</p>
+        <p>Setelah itu saya melanjutkan ke ranah korporasi melalui bootcamp Corporate Legal dan OSS-RBA di Ioda Academy — drafting dan review perjanjian, analisis risiko kontraktual, legal opinion, laporan kepatuhan, hingga perizinan berusaha berbasis risiko. Lima dokumen hasilnya bisa dibaca langsung di bagian contoh karya.</p>
         <p>Saat ini saya mendalami penanganan sengketa dan hukum perusahaan pembiayaan, terutama bagaimana ketentuan OJK membentuk praktik kontrak dan penagihan di industri multifinance.</p>
       </div>
     </div>
@@ -593,7 +614,110 @@
 
   
   
-  <section class="section section-tint" id="pengalaman">
+  <section class="section section-tint" id="karya">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-index">Karya</div>
+        <div>
+          <h2 class="section-title">Contoh karya yang bisa dibaca</h2>
+          <p class="section-sub">Dokumen hasil proyek praktik Corporate Legal dan OSS-RBA di Ioda Academy. Seluruhnya berbasis kasus simulasi dengan perusahaan fiktif, bukan data klien.</p>
+        </div>
+      </div>
+
+      <article class="sample">
+        <div class="sample-top">
+          <span class="sample-kind">Perjanjian komersial</span>
+          <span class="sample-meta">Corporate Legal Bootcamp · 2026</span>
+        </div>
+        <h3 class="sample-title">Commercial Agreement Drafting Collection — MoU, NDA, MoA, dan PKS</h3>
+        <dl class="sample-rows">
+          <dt>Situasi</dt>
+          <dd>Empat kasus berbeda: kemitraan distribusi pangan organik lewat jaringan rantai dingin, kerja sama rekam medis elektronik antara penyedia cloud dan jaringan rumah sakit swasta, proyek percontohan gedung hemat energi, dan kerja sama platform pelatihan digital.</dd>
+          <dt>Pertimbangan</dt>
+          <dd>Memisahkan pasal yang mengikat sejak penandatanganan dari pasal yang masih berupa rencana, menahan akses data pasien sampai perjanjian pemrosesan data disepakati, serta mengatur kepemilikan hasil pengembangan bersama agar tidak dianggap otomatis milik berdua.</dd>
+          <dt>Hasil</dt>
+          <dd>Empat dokumen siap negosiasi. Angka penalti dan nilai komersial sengaja dibiarkan sebagai placeholder karena tidak tersedia dalam kasus — ditulis tegas di dokumennya, bukan diisi perkiraan.</dd>
+        </dl>
+        <a class="sample-link" href="karya/commercial-agreement-drafting.pdf" target="_blank" rel="noopener">Baca dokumen (PDF)</a>
+      </article>
+
+      <article class="sample">
+        <div class="sample-top">
+          <span class="sample-kind">Kontrak vendor</span>
+          <span class="sample-meta">Corporate Legal Bootcamp · 2026</span>
+        </div>
+        <h3 class="sample-title">Perjanjian Layanan Data Center dengan Service Level Agreement</h3>
+        <dl class="sample-rows">
+          <dt>Situasi</dt>
+          <dd>Draf dari vendor hanya memuat klausul umum — tanpa waktu respons, waktu pemulihan, angka kompensasi, hak audit, maupun forum penyelesaian sengketa yang jelas.</dd>
+          <dt>Pertimbangan</dt>
+          <dd>Menyusun definisi yang bisa diukur dan dibuktikan untuk waktu respons, waktu pemulihan, dan downtime, lalu menegaskan bahwa kredit layanan bukan satu-satunya pemulihan atas pelanggaran material. Dasar: KUHPerdata Pasal 1320, 1338, 1238, 1243–1245, dan UU 27/2022 tentang Pelindungan Data Pribadi.</dd>
+          <dt>Hasil</dt>
+          <dd>Kontrak dengan target ketersediaan 99,95%, matriks severity 1–4, tabel kredit layanan berjenjang, hak audit berbasis risiko, dan empat lampiran teknis — disertai gate finalisasi lintas fungsi sebelum penandatanganan.</dd>
+        </dl>
+        <a class="sample-link" href="karya/kontrak-vendor-data-center-sla.pdf" target="_blank" rel="noopener">Baca dokumen (PDF)</a>
+      </article>
+
+      <article class="sample">
+        <div class="sample-top">
+          <span class="sample-kind">Investigasi kepatuhan</span>
+          <span class="sample-meta">Corporate Legal Bootcamp · 2026</span>
+        </div>
+        <h3 class="sample-title">Analisis Akar Masalah Risiko Compliance dalam Pengadaan Vendor</h3>
+        <dl class="sample-rows">
+          <dt>Situasi</dt>
+          <dd>Internal Audit sebuah perusahaan logistik menemukan lima indikasi pelanggaran di unit gudang: vendor dipilih tanpa proses pengadaan resmi, dokumentasi hanya berupa purchase order sederhana, pembayaran penuh di muka tanpa jaminan, tidak ada evaluasi vendor selama enam bulan meski ada keluhan, dan hubungan keluarga antara supervisor dan pemilik vendor.</dd>
+          <dt>Pertimbangan</dt>
+          <dd>Membedakan temuan, penyebab langsung, dan penyebab sistemik. Hubungan keluarga diperlakukan sebagai red flag yang wajib diperiksa secara independen, bukan bukti kolusi. Perpres pengadaan barang/jasa pemerintah juga tidak diterapkan ke perusahaan swasta hanya karena vendor dipilih tanpa tender.</dd>
+          <dt>Hasil</dt>
+          <dd>Analisis akar masalah lengkap dengan protokol pemeriksaan konflik kepentingan enam langkah, rencana korektif 0–90 hari berikut uji efektivitas kontrolnya, dan daftar keputusan yang diminta dari manajemen.</dd>
+        </dl>
+        <a class="sample-link" href="karya/compliance-root-cause-analysis.pdf" target="_blank" rel="noopener">Baca dokumen (PDF)</a>
+      </article>
+
+      <article class="sample">
+        <div class="sample-top">
+          <span class="sample-kind">Penanaman modal</span>
+          <span class="sample-meta">Bootcamp OSS-RBA · 2026</span>
+        </div>
+        <h3 class="sample-title">Analisis Pendirian PT PMA: Struktur Badan Usaha, KBLI, Modal, dan Tenaga Kerja Asing</h3>
+        <dl class="sample-rows">
+          <dt>Situasi</dt>
+          <dd>Startup teknologi pendidikan berkantor pusat di Singapura hendak masuk pasar Indonesia lewat tiga lini: pengembangan perangkat lunak pendidikan berbasis AI, pelatihan daring untuk tenaga pendidik, dan distribusi konten digital.</dd>
+          <dt>Pertimbangan</dt>
+          <dd>Menguji PT PMA terhadap KPPA, memetakan kandidat KBLI 2025 menurut model bisnis tiap lini, dan mengoreksi tiga hal dalam data kasus: nilai investasi berbunyi “lebih besar dari” Rp10 miliar dan bukan tepat Rp10 miliar, dasar sanksi lock-up ada pada Pasal 27 ayat (4) dan bukan ayat (3), serta pengecualian lock-up yang tidak disebutkan sama sekali.</dd>
+          <dt>Hasil</dt>
+          <dd>Rekomendasi mendirikan PT PMA, dilengkapi matriks keputusan KBLI, rencana kepatuhan tenaga kerja asing dari RPTKA sampai DKPTKA, dan tabel risiko hukum beserta pemicunya.</dd>
+        </dl>
+        <a class="sample-link" href="karya/analisis-pt-pma-kbli-tka.pdf" target="_blank" rel="noopener">Baca dokumen (PDF)</a>
+      </article>
+
+      <article class="sample">
+        <div class="sample-top">
+          <span class="sample-kind">Kepatuhan perizinan</span>
+          <span class="sample-meta">Bootcamp OSS-RBA · 2026</span>
+        </div>
+        <h3 class="sample-title">Kalender Kepatuhan Perizinan dan Monitoring OSS-RBA, Juli–Desember 2026</h3>
+        <dl class="sample-rows">
+          <dt>Situasi</dt>
+          <dd>Produsen makanan ringan kemasan dengan tiga perubahan usaha dalam enam bulan: pabrik mulai aktif Juli, gudang distribusi tambahan disewa Agustus, dan penanggung jawab operasional berganti September.</dd>
+          <dt>Pertimbangan</dt>
+          <dd>Memisahkan kewajiban hukum bersyarat dari kontrol internal manajemen supaya keduanya tidak terbaca sebagai tenggat regulator. Tenggat LKPM juga tidak ditetapkan sebelum skala usaha dikonfirmasi, karena Permeninves/BKPM 5/2025 Pasal 286 membedakan periode pelaporan menurut skala.</dd>
+          <dt>Hasil</dt>
+          <dd>Register sepuluh kewajiban dengan pemicu, PIC, bukti, dan risiko; kalender bulanan Juli–Desember; enam prioritas pengawasan; dan lampiran verifikasi retrospektif untuk periode yang sudah lewat.</dd>
+        </dl>
+        <a class="sample-link" href="karya/kalender-kepatuhan-oss-rba.pdf" target="_blank" rel="noopener">Baca dokumen (PDF)</a>
+        <a class="sample-link" href="karya/kalender-kepatuhan-oss-rba.xlsx" target="_blank" rel="noopener">Unduh versi spreadsheet</a>
+      </article>
+
+      <p class="confidential">
+        <span aria-hidden="true">🔒</span>
+        <span>Dokumen dari masa magang di Kejaksaan Agung RI tidak ditampilkan di sini. Berkas perkara, dokumen P-18 sampai P-24, dan materi perkara lainnya bersifat rahasia, dan kerahasiaan itu tetap berlaku setelah penugasan berakhir.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="pengalaman">
     <div class="wrap">
       <div class="section-head">
         <div class="section-index">Pengalaman</div>
@@ -631,7 +755,7 @@
     </div>
   </section>
 
-  <section class="section" id="pendidikan">
+  <section class="section section-tint" id="pendidikan">
     <div class="wrap">
       <div class="section-head">
         <div class="section-index">Pendidikan</div>
@@ -651,7 +775,7 @@
     </div>
   </section>
 
-  <section class="section section-tint" id="pelatihan">
+  <section class="section" id="pelatihan">
     <div class="wrap">
       <div class="section-head">
         <div class="section-index">Pelatihan</div>
@@ -669,6 +793,16 @@
           <li>Memetakan risiko hukum dan kontraktual sebuah perjanjian, lalu menuangkannya menjadi pendapat hukum yang menimbang peraturan yang berlaku sekaligus kebutuhan bisnis klien.</li>
           <li>Membangun perangkat kepatuhan perusahaan: SOP, laporan kepatuhan berkala, serta analisis dampak perubahan regulasi terhadap operasional.</li>
         </ul>
+        <div class="cert">
+          <div class="cert-scores">
+            <div><span class="cert-k">Nilai pengetahuan</span><span class="cert-v">98</span></div>
+            <div><span class="cert-k">Nilai keterampilan</span><span class="cert-v">100</span></div>
+            <div><span class="cert-k">Post-test</span><span class="cert-v">96</span></div>
+            <div><span class="cert-k">Status</span><span class="cert-v">Kompeten</span></div>
+          </div>
+          <a class="cert-link" href="karya/sertifikat-corporate-legal.pdf" target="_blank" rel="noopener">Lihat sertifikat</a>
+          <span class="cert-id">ID verifikasi: BLG16-20260823-TQ7SB (penyelesaian) &middot; BLG16-20260823-9T56E (kompetensi)</span>
+        </div>
       </details>
 
       <details class="course">
@@ -682,11 +816,21 @@
           <li>Memproses pendaftaran dan dokumentasi perizinan melalui sistem OSS-RBA, termasuk NIB dan persyaratan kesesuaian pemanfaatan ruang.</li>
           <li>Menyiapkan legal setup badan usaha PMDN/PMA dan memantau perubahan regulasi yang memengaruhi izin yang sudah terbit.</li>
         </ul>
+        <div class="cert">
+          <div class="cert-scores">
+            <div><span class="cert-k">Nilai pengetahuan</span><span class="cert-v">100</span></div>
+            <div><span class="cert-k">Nilai keterampilan</span><span class="cert-v">98</span></div>
+            <div><span class="cert-k">Post-test</span><span class="cert-v">100</span></div>
+            <div><span class="cert-k">Status</span><span class="cert-v">Kompeten</span></div>
+          </div>
+          <a class="cert-link" href="karya/sertifikat-oss-rba.pdf" target="_blank" rel="noopener">Lihat sertifikat</a>
+          <span class="cert-id">ID verifikasi: BOSS3-20260704-FZYC2 (penyelesaian) &middot; BOSS3-20260704-T3S9O (kompetensi)</span>
+        </div>
       </details>
     </div>
   </section>
 
-  <section class="section" id="keahlian">
+  <section class="section section-tint" id="keahlian">
     <div class="wrap">
       <div class="section-head">
         <div class="section-index">Keahlian</div>
